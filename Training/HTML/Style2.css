@@ -1,0 +1,28 @@
+body{
+    background: url('https://media.istockphoto.com/id/1322277517/photo/wild-grass-in-the-mountains-at-sunset.jpg?s=612x612&w=0&k=20&c=6mItwwFFGqKNKEAzv0mv6TaxhLN3zSE43bWmFN--J5w=') no-repeat;
+
+
+}
+
+
+h1{
+    color:orchid;
+   border-style: solid;
+   border-color: blue;
+   border-width: 5px 20px 4px 10px;
+   border-radius: 10px;
+}
+h2{
+    color: rgb(230, 133, 44);
+    border: 3px dashed rgb(20, 111, 20);
+}
+h3{
+    color: rgb(177, 152, 220);
+}
+h4{
+    color: #180303;
+}
+h5{
+   color: hsl(0, 100%, 51%);
+   background-color: hsla(163, 100%, 50%, 1);
+}

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        /* Animation */
+
+    #container{
+        width: 400px;
+        height: 400px;
+        border: 2px solid slategrey;
+        background: #99B898;
+        position: relative;
+        border-radius: 10px;
+    }
+    #inside{
+        width: 50px;
+        height: 50px;
+        border: 2px solid #ed8135;
+        background: #FECEAB;
+        position: absolute;
+        border-radius: 10px;
+    }
+
+    /* onclick */
+
+    #mydiv,#mydiv1,#mydiv2{
+        width: 100px;
+        height: 100px;
+        background-color: aquamarine;
+        border: 2px solid rgb(95, 64, 64);
+        border-radius: 10px;
+    }
+
+    /* mouse over & out */
+
+    </style>
+</head>
+<body>
+
+    <!-- Animation  -->
+    
+    <div id="container">
+        <div id="inside"> </div>
+    </div>
+    <p><button onclick="myMove()">Click</button></p>
+
+    <!-- onclick --> <!-- Mouse over & out  -->
+    
+    <p> # Mouse over & out</p>
+
+    <div id="mydiv" onmouseover="onMouseOver()" 
+    onmouseout="onmouseOut()"></div><br>
+    <button onclick="changeColor()"> Change Colour</button>
+    <br>
+    <br>
+
+    <!-- Mouse down & up  -->
+    <p> # Mouse Down And Up </p>
+    <div id="mydiv1"></div>
+    <br>
+    <button onmousedown="changeColorDown()" 
+    onmouseup="changeColorUp()"> Change Colour Down Up</button>
+
+    <!-- Add Listener event-->
+     <p># Add Listener event</p>
+     <div id="mydiv2"></div>
+     <br>
+     <button id="btn"> Change Colour</button>
+
+    <script>
+
+        // Animation
+
+        function myMove(){
+            let pos=0;
+            const ele = document.getElementById("inside");
+            const id = setInterval(frame,);
+            function frame(){
+                if(pos == 347){
+                    clearInterval(id);
+                }
+                pos++;
+                ele.style.top = pos+ 'px';
+                ele.style.left = pos + 'px';
+            }
+        }
+
+        // onclick 
+
+        function changeColor(){
+            var div= document.getElementById("mydiv");
+            div.style.backgroundColor="#ed8135"
+        }
+
+        // Mouse over & out 
+        function onMouseOver(){
+            var div = document.getElementById("mydiv")
+            div.style.backgroundColor="blue"
+        }
+
+        function onmouseOut(){
+            var div = document.getElementById("mydiv")
+            div.style.backgroundColor="purple"
+        }
+
+        // Mouse Down & Up
+
+        function changeColorDown(){
+            var div = document.getElementById("mydiv1");
+            div.style.backgroundColor="red"
+        }
+
+        function changeColorUp(){
+            var div = document.getElementById("mydiv1");
+            div.style.backgroundColor="black"
+        }
+
+
+        // Add Listener event 
+
+        document.getElementById('btn').
+        addEventListener('click',fun)
+
+       function fun(){
+            document.getElementById('mydiv2').
+            style.backgroundColor='red'
+        }
+
+    </script>   
+</body>
+</html>

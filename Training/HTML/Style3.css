@@ -1,0 +1,66 @@
+h1{
+    text-align: center;
+}
+p{
+    text-align: justify;
+}
+/* List CSS */
+
+ul.a{
+    list-style-type: circle;
+}
+ul.b{
+    list-style-type: square;
+}
+ol.c{
+    list-style-type: upper-roman;
+}
+ol.d{
+    list-style-type: lower-alpha;
+}
+
+/* table CSS */
+
+#customers{
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+}
+
+#customers td, #customers th{
+    border:1px solid #ddd;
+    padding: 8px;
+}
+
+#customers tr:nth-child(even){
+   background-color: #f2f2f2;
+}
+#customers tr:hover{
+    background-color: #ddd;
+ }
+
+ #customers th{
+    padding: 12px ;
+    text-align: left;
+    background-color: #04AA6D;
+    color: white;
+ }
+
+ /* Link CSS */
+
+ a:link{
+    color: red;
+ }
+
+ a:visited{
+    color: green;
+ }
+ a:hover{
+    color: aquamarine;
+    text-decoration: underline;
+    background-color:black;
+ }
+ a:active{
+    color: blueviolet;
+ }
+
+
